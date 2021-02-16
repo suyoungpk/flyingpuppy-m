@@ -1,0 +1,68 @@
+@import url(./common.css);
+
+.member_wrapper{position:relative;text-align:left;padding:0 0 50px}
+.member_wrapper dl{padding-top:5px;border-top:2px solid #000}
+.member_wrapper dl+.btn-area{margin:15px 0 0;padding-bottom:20px;border-bottom:1px solid #D8D8D8}
+.member_wrapper dl dt{position:relative;line-height:40px;font-size:12px;font-weight:700;color:#333}
+.member_wrapper dl dt .right{position:absolute;top:0;right:0;text-align:right;}
+.member_wrapper dl dt p{font-weight:normal;margin:-6px 0 10px;font-size:11px;color:#888;line-height:15px}
+.member_wrapper dl dd .input-box{width:100%}
+.member_wrapper dl dd+dd,
+.member_wrapper dl dd+dt{margin:4px 0 0}
+.member_wrapper dl+div{width:100%;position:relative;text-align:left;line-height:40px}
+.member_wrapper dl+div .chk-box label{font-size:13px;color:#666;}
+.member_wrapper .btn-area{width:100%}
+.member_wrapper .btn-area.line{padding:12px 0 0;border-top:1px solid #D8D8D8;}
+.member_wrapper .btn{width:100%}
+/*.member_wrapper .alert{position:absolute;top:180px;left:0;width:100%;text-align:center;font-size:14px;color:#F21111}*/
+
+.login .member_wrapper dl{padding-top:10px;border:0}
+.login dl+div ul{text-align:center;line-height:40px;margin:5px 0}
+.login dl+div ul li{position:relative;display:inline-block;vertical-align:top;}
+.login dl+div ul li a{font-size:12px;color:#666}
+.login dl+div .right li a:focus,
+.login dl+div .right li a:hover{color:#0813C0;text-decoration:underline}
+.login dl+div .chk-box{margin:15px 0;width:100%;}
+.login dl+div ul li + li{margin-left:18px;padding-left:18px}
+.login dl+div ul li + li::after{display:block;content:"";position:absolute;top:calc(50% - 6px);left:0;width:1px;height:12px;background:#BFBFBF;}
+
+.find .txt{margin:30px 0;font-size:13px;color:#777;line-height:16px;letter-spacing:-0.05em;text-align:center}
+.find .txt strong{font:inherit;color:#0813C0}
+
+.find.email .txt{text-align:left}
+.find.email .btn-area.line{margin:20px 0 0;padding-top:20px;border-top:1px solid #D8D8D8;}
+.find.email .btn-area p{font-size:12px;color:#777;line-height:16px;letter-spacing:-0.05em}
+.find.email .btn-text{margin:8px 0 0;width:auto;font-size:13px;color:#333;letter-spacing:-0.05em}
+
+.emailreg .txt{margin:30px 0;font-size:13px;color:#777;line-height:16px;letter-spacing:-0.05em;text-align:center}
+.emailreg .txt strong{font:inherit;color:#0813C0}
+.emailreg .member_wrapper dl{padding:0;border:0}
+.emailreg .member_wrapper dl dt{position:absolute}
+.emailreg .member_wrapper dl dd{margin:0 0 10px}
+
+.join .member_wrapper {padding-top:30px}
+.join .member_wrapper dl dd+dd,
+.join  .member_wrapper dl dd+dt{margin:12px 0 0}
+.join .input-box.validator > div .select-box .selected-option{width:44px;height:38px;padding-top:38px;border:0;overflow:hidden;box-sizing:border-box}
+.join .terms-list{border:1px solid #ccc;padding:20px;border-radius:3px}
+.join dt .right{height:100%;line-height:inherit}
+.join .chk-box label{font-size:13px;color:#666;font-weight:normal}
+.join .terms-list li {position:relative;}
+.join .terms-list li +li {margin:14px 0 0}
+.join .terms-list li  p{padding-left:29px;}
+.join .terms-list li .btn-view,
+.join dt .btn-float .btn-view{position:relative;display:inline-block;background:none;color:#777;font-size:12px;}
+.join .terms-list li .btn-view::before,
+.join dt .btn-float .btn-view::before{position:absolute;bottom:0;left:0;width:100%;height:1px;content:"";background:#777}
+.join  dl+.btn-area{padding-bottom:13px}
+.join  .btn-area + .btn-area{margin:20px 0 0}
+.join dt .btn-float{position:absolute;top:15px;right:0}
+
+.join-form  .member_wrapper dl{padding:0;border:0}
+
+.popup-st1.benefit h2{margin:0 0 15px;font-size:24px;line-height:34px;color:#333;text-align:center}
+.popup-st1.benefit .coupon strong,
+.popup-st1.benefit h2 strong{color:#0813C0;font-weight:700}
+.popup-st1.benefit .text{font-size:12px;color:#888;line-height:20px}
+.popup-st1.benefit .text.red{font-size:11px;color:#f00;line-height:18px}
+.popup-st1.benefit .coupon{margin:20px 0 ;width:234px;height:82px;line-height:82px;font-size:20px;color:#333;border:1px solid #bcbcbc;border-radius:10px;text-align:center;}

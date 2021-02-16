@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0"/>
+	<title>Flying Puppy</title>
+	<meta name="keywords" content="Flying Puppy">
+	<meta name="description" content="Flying Puppy">
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+	<link rel="stylesheet" href="./assets/css/swiper.min.css">
+	<link rel="stylesheet" href="./assets/css/common.css">
+	<style>
+        .guide  .guide-p{line-height:150%}
+        .guide .guide-title{width:100%;border-top:1px solid #ccc;margin:50px 0 30px;text-align:center;padding:30px 0 0}
+        .guide .guide-title em{font-size:27px;background:#000;color:#000;display:inline-block;color:#fff;font-weight:bold}
+        .guide .guide-list{width:100%;margin:30px 0 0}
+        .guide .guide-list li{display:inline-block;vertical-align:middle;margin-top:0 5px}
+        .guide .guide-list li a{display:inline-block;background:#ddd;padding:0 10px;line-height:30px;font-size:16px;background:#ddd;border-radius:5px}
+        .guide .guide-list li a:hover{background:#999;color:#fff}
+    </style>
+</head>
+<body>
+	<section class="container guide">
+		<div id="skipTo">
+			<a href="#menu">메뉴 바로가기</a>
+			<a href="#content">본문 바로가기</a>
+		</div>
+		<div class="pop-area">
+			<header>
+				<div class="btn-area left">
+					<button class="btn btn-back">뒤로가기</button>
+				</div>
+				<h1><span>Flying Puppy</span> Standard 식단</h1>
+				<div class="btn-area right">
+					<button class="btn btn-nav">네비게이션</button>
+				</div>
+			</header>
+			<nav class="gnb_wrapper" style="display:none">
+				<div>
+					<!-- <div class="logo">flying puppy</div> -->
+	
+					<ul class="gnb">
+						<li>
+							<button type="button">Level1</button>
+							<ul>
+								<li><a href="#">Level1-1</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="">Level1</a>
+						</li>
+					</ul>
+					<div class="mask"></div>
+				</div>
+			</nav>
+			<section class="contents">
+				<main class="sub-main">
+					<h1>GUIDE</h1>
+					<div class="sub-contents">
+						<ul class="guide-list">
+							<!-- <li><a href="#title">title</a></li> -->
+							<li><a href="#tab">tab</a></li>
+							<li><a href="#button">button</a></li>
+							<li><a href="#icon">icon</a></li>
+							<li><a href="#board">board</a></li>                        
+							<li><a href="#form">form</a></li>
+							<li><a href="#popup">popup</a></li>
+							<li><a href="#guide-calendar">calendar</a></li>
+							<!-- <li><a href="#pager">pager</a></li> -->
+							
+						</ul>
+						<div class="guide-title" id="font"><em>font</em></div>
+						<p>
+							<span style="font-weight:300">Notosans Kr light</span>&nbsp;&nbsp;
+							<span style="font-weight:normal">Notosans Kr Regular</span>&nbsp;&nbsp;
+							<span style="font-weight:500">Notosans Kr Medium</span>&nbsp;&nbsp;
+							<span style="font-weight:700">Notosans Kr Bold</span>
+						</p>
+						<div class="guide-title" id="tab"><em>graph</em></div>
+						<div class="graphBox">
+							<div class="graph-tit">
+								권장 칼로리 구성
+								<p>※휴지의 하루 권장 칼로리는 <strong>357 kcal</strong> 입니다.</p>
+							</div>
+							<p class="graph-bar">
+								<span class="percent1" style="width:60%"></span>
+								<span class="percent2" style="width:5%"></span>
+								<span class="percent3" style="width:15%"></span>
+								<span class="percent4" style="width:20%"></span>
+							</p>
+							<p class="graph-txt">
+								<span class="opt1">식단 (60%)</span>
+								<span class="opt2">껌 (5%)</span>
+								<span class="opt3">영양제 (15%)</span>
+								<span class="opt4">간식 (20%)</span>
+							</p>
+						</div>
+						  <!-- //////////////////////////////////tab ////////////////////////////////////////////////////-->         
+						  <div class="guide-title" id="tab"><em>TAB</em></div>
+							<div class="inner_wrapper">
+								<ul class="tab tab-st1">
+									<li><a href="javascript:void(0)">소고기 식단</a></li>
+									<li class="on"><a href="javascript:void(0)">돼지고기 식단</a></li>
+									<li><a href="javascript:void(0)">닭고기 식단</a></li>
+									<li><a href="javascript:void(0)">양고기 식단</a></li>
+								</ul>
+							</div>
+							<div class="tab-con">
+								con1
+							</div>
+							<div class="tab-con" style="display:block">
+								con2
+							</div>
+							<div class="tab-con">
+								con3
+							</div>
+							<div class="tab-con">
+								con4
+							</div>
+						  <br>
+						  <br>
+	
+	<!-- //////////////////////////////////button ////////////////////////////////////////////////////-->
+						<div class="guide-title" id="button"><em>BUTTON</em></div>
+							<!--<button type="button" class="btn btn-gray-line small">로그인</button>-->
+							<button type="button" class="btn btn-blue-line big">버튼</button><br><br>
+							<button type="button" class="btn btn-blue big">버튼</button><br><br>
+							<button type="button" class="btn btn-blue big" disabled>버튼</button><br><br>
+							<button type="button" class="btn btn-gray big">버튼</button><br><br>
+							<button type="button" class="btn btn-gray-line big">버튼</button><br><br>
+							<button type="button" class="btn btn-gray-line big" disabled>버튼</button><br><br>
+							<button type="button" class="btn btn-blue-line small">버튼</button>
+							<button type="button" class="btn btn-blue small">버튼</button>
+							<button type="button" class="btn btn-blue small" disabled>버튼</button>
+							<button type="button" class="btn btn-gray small">버튼</button>
+							<button type="button" class="btn btn-gray-line small">버튼</button>
+							<button type="button" class="btn btn-gray-line small" disabled>버튼</button><br>
+						  <!-- //////////////////////////////////button ////////////////////////////////////////////////////-->
+						<div class="guide-title" id="icon"><em>ICON</em></div>
+						
+						<span class="ico ico-st1 step0">준비중</span>
+						<span class="ico ico-st1 step1">조리중</span>
+						<span class="ico ico-st1 step2">조리완료</span>
+						<span class="ico ico-st1 step3">배송중</span>
+						<span class="ico ico-st1 step4">배송완료</span>
+						   <br><br>
+						<span class="ico ico-st1 step0 on">준비중</span>
+						<span class="ico ico-st1 step1 on">조리중</span>
+						<span class="ico ico-st1 step2 on">조리완료</span>
+						<span class="ico ico-st1 step3 on">배송중</span>
+						<span class="ico ico-st1 step4 on">배송완료</span>
+						<br><br>
+						<span class="ico ico-st2 step0">준비중</span>
+						<span class="ico ico-st2 step1">조리중</span>
+						<span class="ico ico-st2 step2">조리완료</span>
+						<span class="ico ico-st2 step3">배송중</span>
+						<span class="ico ico-st2 step4">배송완료</span>
+						<br>
+						<br>
+						
+					 <span class="ico ico-text yellow">구독중</span>
+					 <span class="ico ico-text gray">구독예정</span>
+					 <span class="ico ico-text-line gray">배송예정</span>
+					 <br><br>
+					 star<br><br>
+					 <span class="ico ico-star">별없음</span><br><br>
+					 <span class="ico ico-star half">별반개</span><br><br>
+					 <span class="ico ico-star n1">별한개</span><br><br>
+					 <span class="ico ico-star n1 half">별한개반</span><br><br>
+					 <span class="ico ico-star n2">별두개</span><br><br>
+					 <span class="ico ico-star n2 half">별두개반</span><br><br>
+					 <span class="ico ico-star n3">별세개</span><br><br>
+					 <span class="ico ico-star n3 half">별세개</span><br><br>
+					 <span class="ico ico-star n4">별네개</span><br><br>
+					 <span class="ico ico-star n4 half">별네개반</span><br><br>
+					 <span class="ico ico-star n5">별다섯개</span>
+					 <br><br>
+					
+					 <div class="starBox ico-star">
+						<input type="hidden" value="">
+						<span class="ico ico-star"></span>
+					</div>
+						<!-- //////////////////////////////////board ////////////////////////////////////////////////////-->
+						<div class="guide-title" id="board"><em>board</em></div>
+						<div class="inner_wrapper">
+							board-st1<br> <br>
+							
+							<div class="board-wrapper">
+								<h3 class="title">상세정보</h3>
+								<ul class="board-st1">
+									<li>
+										<dl>
+											<dt>상품명</dt>
+											<dd>Flying Puppy Standard 식단 - 풀팩</dd>
+										</dl>
+										<div class="btn-area">
+											<a href="javascript:void(0)">상품변경</a>
+										</div>
+									</li>
+									<li>
+										<dl>
+											<dt>다음 결제 예정금액</dt>
+											<dd class="price"><del>100,000</del> <strong>75,000원</strong></dd>
+											<dd>
+												<button class="btn btn-gray-line small">쿠폰적용</button>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<div class="title-area">
+											<p class="date">2020.04.22 수요일</p>
+											<p class="name">모든 반려견이 함께 먹을 수 있는 Flying Puppy Standard Set</p>
+											<p class="price">
+												구독료 : <strong>75,000원</strong>
+											</p>
+										</div>
+										<div class="btn-area">
+											<span class="ico ico-text-line gray">배송완료</span>
+										</div>
+										<div class="description-area">
+											<div>
+												<p class="calory"><strong>철수</strong>의 한끼 식사 권장 칼로리는 <strong>367 Kcal</strong> 입니다.</p>
+											</div>
+											<div>
+												<dl>
+													<dt>식단 수량 :</dt>
+													<dd>소고기 식단 : <span>0개</span></dd>
+													<dd>소고기 식단 : <span>0개</span></dd>
+													<dd>소고기 식단 : <span>0개</span></dd>
+													<dd>소고기 식단 : <span>0개</span></dd>
+												</dl>
+											</div>
+											<div class="btn-area">
+												<button class="btn btn-blue big">구독 후기 작성</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<p class="help">- 철수의 한끼 식사 권장 칼로리는 367 Kcal 입니다.</p>
+							</div><!--// board-wrapper -->
+						</div>
+						<div class="guide-title" id="form"><em>FORM</em></div>
+						<div class="inner_wrapper">
+							<form action="" name="frm" style="text-align:center">
+								<!-- //////////////////////////////////input ////////////////////////////////////////////////////-->
+							   <h3>input style1</h3><br>
+							   <div class="input-box">
+								   <label for="input">반려견 이름</label>
+								   <input type="text" value="" id="input">
+							   </div>
+							   <br><br>
+							   <h3>input search</h3><br>
+							   <div class="input-box srch">
+								<label for="search">검색어입력</label>
+								<input type="search" value="" id="search">
+								<button class="btn btn-submit" type="button">검색하기</button>
+								</div><br><br>
+							   <h3>input validator</h3><br>
+							   <div class="input-box validator">
+									<label for="newpwd1">새 비밀번호를 입력해 주세요.</label>
+									<input type="password" value="" id="newpwd1">
+									<p>비밀번호가 확인되었습니다.</p>
+								</div>
+							   <div class="input-box validator fail">
+									<label for="newpwd2" style="display:none">새 비밀번호를 입력해 주세요.</label>
+								   <input type="password" value="123456"  id="newpwd2">
+								   <p>비밀번호를 다시 입력해 주세요.</p>
+							   </div>
+							   <div class="input-box validator pass">
+								   <label for="newpwd3" style="display:none">새 비밀번호를 입력해 주세요.</label>
+								   <input type="password" value="123456"  id="newpwd3">
+								   <p>비밀번호가 확인되었습니다.</p>
+							   </div>
+							   <br><br><br><br>
+							   <h3>input style2</h3><br>
+							   <div class="input-box counter">
+								   <label for="input2">직접입력</label>
+								   <input type="text" value="" id="input2">
+								   <div class="float"><span class="byte">0</span>/50</div>
+							   </div>
+							   <br><br>
+							   <!-- search : <br><br>
+								   <div class="form-ui srch-box">
+									   <input type="text">
+									   <button type="button" class="btn srch">검색하기</button>
+								   </div>
+								   <br><br>
+								   <span class="form-ui input-box">
+									   <label>title</label>
+									   <input type="text" placeholder="title">
+									   <button type="button" class="btn gray middle">검색</button>
+								   </span> -->
+								<span class="input-file-box text">
+									<input type="file" value="" id="photochg">
+									<label for="photochg">반려견 사진 등록</label>
+								</span>
+							   <br><br><br><br>
+							   <!-- //////////////////////////////////checkbox ////////////////////////////////////////////////////-->
+							   <h3>checkbox</h3><br><br>
+							   <span class="chk-box allchk">
+								   <input type="checkbox" name="chk" id="all-chk">
+								   <label for="all-chk">모두체크</label>
+							   </span><br><br>
+							   <span class="chk-box">
+								   <input type="checkbox" name="chk" id="chk2">
+								   <label for="chk2">체크</label>
+							   </span><br><br>
+							   <span class="chk-box">
+								   <input type="checkbox" name="chk" id="chk3">
+								   <label for="chk3">체크</label>
+							   </span><br><br>
+							   <span class="chk-box text">
+								   <input type="checkbox" name="" id="chk-menu">
+								   <label for="chk-menu">면역력이 약해요</label>
+							   </span>
+								<span class="chk-box text line">
+									<input type="checkbox" name="chk3" id="chk-text01">
+									<label for="chk-text01">활발하게</label>
+								</span>
+								<span class="chk-box text line n">
+									<input type="checkbox" name="chk3" id="chk-text02">
+									<label for="chk-text02">두줄<br>라인</label>
+								</span>
+								<br><br>
+								<br><br>
+
+						    <span class="chk-box ico puppy-thin">
+								<input type="checkbox" name="chk2" id="chk-icon01">
+								<label for="chk-icon01">마른</label>
+							</span>
+							<span class="chk-box ico puppy-slim">
+								<input type="checkbox" name="chk2" id="chk-icon02">
+								<label for="chk-icon02">날씬한</label>
+							</span>
+							<span class="chk-box ico puppy-normal">
+								<input type="checkbox" name="chk2" id="chk-icon03">
+								<label for="chk-icon03">보통</label>
+							</span>
+							<span class="chk-box ico puppy-chubby">
+								<input type="checkbox" name="chk2" id="chk-icon04">
+								<label for="chk-icon04">통통한</label>
+							</span>
+							<span class="chk-box ico puppy-heavy">
+								<input type="checkbox" name="chk2" id="chk-icon05">
+								<label for="chk-icon05">비만</label>
+							</span>
+							<span class="chk-box ico puppy-calm">
+								<input type="checkbox" name="chk2" id="chk-icon06">
+								<label for="chk-icon06">활발하지않게</label>
+							</span>
+							<span class="chk-box ico puppy-properly">
+								<input type="checkbox" name="chk2" id="chk-icon07">
+								<label for="chk-icon07">적당하게</label>
+							</span>
+							<span class="chk-box ico puppy-active">
+								<input type="checkbox" name="chk2" id="chk-icon08">
+								<label for="chk-icon08">활발하게</label>
+							</span>
+
+							<br><br><br><br>
+								textarea
+								<br><br>
+								<div class="textarea-box">
+									<label for="longtext">입력해주세요.</label>
+									<textarea name="" id="longtext"></textarea>
+									<div class="float"><span class="byte">0</span>/50</div>
+								</div>
+								
+								<br><br><br><br>
+							   <!-- //////////////////////////////////radio ////////////////////////////////////////////////////-->
+							   <h3>radio</h3> <br><br>
+							   <span class="radio-box">
+								   <input type="radio" name="gender" id="radio1">
+								   <label for="radio1">회원정보동일</label>
+							   </span>
+							   <span class="radio-box">
+								   <input type="radio" name="gender" id="radio2">
+								   <label for="radio2">새로입력</label>
+							   </span> <br><br><br><br>
+							   <!-- //////////////////////////////////select ////////////////////////////////////////////////////-->
+							   <h3>select</h3><br><br>
+							   <div class="select-box">
+									<label for="selectbox" class="selected-option">했고</label>
+									<select name="" value="1" id="selectbox">
+										<option value="" selected disabled hidden>default</option>
+										<option value="1">했고</option>
+										<option value="2">안했고</option>
+									</select>
+							   </div> <br> <br>
+						   </form>
+						</div>
+						<div class="guide-title" id="guide-calendar"><em>calendar</em></div>
+						<div class="calendar-box" style="margin:0 auto">
+							<div class="calendar" id="datepicker"></div>
+							<ul class="calendar_sign">
+								<li class="today">오늘 날짜</li>
+								<li class="nextday">다음 배송 날짜</li>
+								<li class="selectedday">선택한 날짜</li>
+							</ul>
+						</div>
+					  
+						<div class="guide-title" id="popup"><em>POPUP</em></div>
+						<button type="button" class="btn gray" onclick="openPop('gallery')">photo 팝업열기</button>
+						<button type="button" class="btn gray" onclick="openPop('popup2')">content 팝업열기</button>
+						<button type="button" class="btn gray" onclick="openPop('popup3')">confirm 팝업열기</button>
+						<button type="button" class="btn gray" onclick="openPop('calendar')">calendar 팝업열기</button>
+						<button type="button" class="btn gray" onclick="openPop('phone')">phone 번호 입력 팝업열기</button>
+						<br> <br> <br> <br> <br> <br> <br> <br>
+					</div>
+				</main>
+			</section>
+			<div class="popup2 popup-st popup-calendar" id="calendar">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>수령일 변경</h1>
+					</div>
+					<div class="pop-con">
+						<p class="info2"><span>미리 배송받을 수령일을 선택해 주세요.</span></p>
+						<div class="calendar-box">
+							<div class="calendar" id="datepicker2"></div>
+							<ul class="calendar_sign">
+								<li class="today">오늘 날짜</li>
+								<li class="nextday">다음 배송 날짜</li>
+								<li class="selectedday">선택한 날짜</li>
+							</ul>
+						</div>
+						<p class="info">
+							미리 배송받을 경우 기존 결제일도 변경 될 수 있습니다.<br>
+							<span>택배사의 사정에 따라 배송일(도착일)이 변동 될 수 있습니다.</span>
+						</p>
+						<div class="pop-btn">
+							<button type="button" class="btn btn-blue big" disabled>수령일 변경하기</button>
+						</div>
+					</div>
+					<button class="btn btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+		</div>
+		<footer>
+			<h1 class="hidden">사이트 정보</h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="/">서비스소개</a></li>
+					<li><a href="/">이용약관</a></li>
+					<li><a href="/">개인정보처리방침</a></li>
+				</ul>
+			</nav>
+			<div class="con">
+				<ul class="info">
+					<li>주식회사 밥먹자</li>
+					<li>대표자 : 구본하</li>
+				</ul>
+				<ul class="info">
+					<li>개인정보보호 책임자 : 임아롱</li>      
+					<li>사업자등록번호 : 104-88-01459</li>      
+					<li>통신판매업 : 제 2020-서울강남-0000호</li>
+				</ul>
+				<p><address>서울특별시 강남구 테헤란로 431, 7층 7021호<br>(삼성동, 저스트코타워)</address></p>
+				<p><a href="mailto:flyingpuppy_help@bobmukza.com">flyingpuppy_help@bobmukza.com</a></p>
+				<p class="copyright">&#169; BOBMUKZA 2020 co., Ltd. All right reserved.</p>
+			</div>
+			<ul class="sns">
+				<li><a href="/" target="_blank" title="새 창" class="ico facebook btn-sns">facebook</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico instagram btn-sns">instagram</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico youtube btn-sns">youtube</a></li>
+			</ul>
+		</footer>
+		<div class="popup popup-slide" id="gallery">
+			<div class="popup-wrapper">
+			  <div class="pop-container">
+				<div class="pop-slide-wrap">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<p class="img"><img src="https://placeimg.com/200/200/any?1"></p>
+						</li>
+						<li class="swiper-slide">
+							<p class="img"><img src="https://placeimg.com/200/200/any?1"></p>
+						</li>
+						<li class="swiper-slide">
+							<p><img src="https://placeimg.com/200/200/any?3"></p>
+						</li>
+						<li class="swiper-slide">
+							<p class="img"><img src="https://placeimg.com/200/200/any?4"></p>
+						</li>
+					</ul>
+					<button type="button" class="swiper-button-next"></button>
+					<button type="button" class="swiper-button-prev"></button>
+					<div class="swiper-pagination"></div>
+				</div>
+			  </div>
+			  <button type="button" class="btn-close">팝업 닫기</button>
+			</div>
+		 </div><!-- popup -->
+		 <div class="popup popup-st1" id="popup2">
+			 <div class="popup-wrapper">
+				 <div class="pop-container">
+					 <div class="pop-tit">
+						 Title Area
+					 </div>
+					 <div class="pop-con">
+						 <p>
+							 이곳은 내용이 들어가는 영역입니다.<br>
+							 이곳은 내용이 들어가는 영역입니다.<br>
+							 이곳은 내용이 들어가는 영역입니다.<br>
+							 이곳은 내용이 들어가는 영역입니다.이곳은 내용이 <br>
+							 이곳은 내용이 들어가는 영역입니다.이곳은 <br>
+							 이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.<br><br>
+							 
+							 이곳은 내용이 들어가는 영역입니다.<br><br>
+							 
+							 이곳은 내용이 들어가는 영역입니다.<br>
+							 이곳은 내용이 들어가는 영역입니다.이곳은<br>
+							 내용이 들어가는 영역입니다.
+						 </p>
+						 <p>
+							이곳은 내용이 들어가는 영역입니다.<br>
+							이곳은 내용이 들어가는 영역입니다.<br>
+							이곳은 내용이 들어가는 영역입니다.<br>
+							이곳은 내용이 들어가는 영역입니다.이곳은 내용이 <br>
+							이곳은 내용이 들어가는 영역입니다.이곳은 <br>
+							이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.이곳은 내용이 들어가는 영역입니다.<br><br>
+							
+							이곳은 내용이 들어가는 영역입니다.<br><br>
+							
+							이곳은 내용이 들어가는 영역입니다.<br>
+							이곳은 내용이 들어가는 영역입니다.이곳은<br>
+							내용이 들어가는 영역입니다.
+						</p>
+					 </div>
+					 <div class="pop-btn">
+						 <button type="button" class="btn btn-blue-line big">Button</button>
+						 <button type="button" class="btn btn-blue big">Button</button>
+					 </div>
+				 </div>
+				 <button type="button" class="btn-close">팝업 닫기</button>
+			 </div>
+		 </div><!-- popup -->
+		 <div class="popup popup-st2" id="popup3">
+			 <div class="popup-wrapper">
+				 <div class="pop-container">
+				 <div class="pop-tit">
+					 Title Area
+				 </div>
+				 <div class="pop-con">
+						 <p>
+							 이곳은 내용이 들어가는 영역입니다.<br>
+							 이곳은 내용이 들어가는 영역입니다.
+						 </p>
+				 </div>
+				 <div class="pop-btn">
+						 <button type="button" class="btn btn-gray big w50">Button</button>
+						 <button type="button" class="btn btn-blue big w50">Button</button>
+				 </div>
+				 </div>
+				 <button type="button" class="btn-close">팝업 닫기</button>
+			 </div>
+		 </div><!-- popup -->
+		 <div class="popup popup-st1 popup-phone" id="phone">
+			<div class="popup-wrapper">
+				<div class="pop-container">
+					<div class="pop-tit">
+						휴대전화번호 입력
+					</div>
+					<div class="pop-con">
+						<div>	
+							<div class="input-box">
+								<label for="phoneNumInput">'-'없이 입력</label>
+								<input type="text" value="" id="phoneNumInput">
+							</div>
+						</div>
+						<p class="line-box">
+							<span class="chk-box">
+								<input type="checkbox" name="agre" id="agre">
+								<label for="agre">혜택/정보 수신 알림 동의</label>
+							</span>	
+						</p>
+					</div>
+					<div class="pop-btn noline">
+						<button type="button" class="btn btn-blue big" disabled>확인</button>
+					</div>
+				</div>
+				<button type="button" class="btn-close">팝업 닫기</button>
+			</div>
+		</div><!-- popup -->
+	</section> 
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/jquery-ui.min.js"></script>
+	<script src="./assets/js/perfect-scrollbar.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>	
+	<script src="./assets/js/common.js"></script>
+	<script>
+		// Seting up disabled days
+		var disabledDays=["2020-8-24","2020-8-25","2020-8-26"];
+		var autoSeletedDay=["2020-8-17"];
+		var disabledSomeday = function(date){
+			var month = date.getMonth()+1;
+			var dates = date.getDate();
+			var year = date.getFullYear();
+			var dateString =year+'-'+month+'-'+dates;
+			for(var i=0;i<disabledDays.length;i++){
+				if($.inArray(dateString,disabledDays) != -1)
+					return [false, "disabled"];	
+			}
+			if($.inArray(dateString,autoSeletedDay) != -1)
+					return [true, "autoSeleted"];	
+			return [true, ""];
+		}
+		$( "#datepicker" ).datepicker({
+			regional: "ko",
+			dateFormat:'yy-mm-dd',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], // 개월 텍스트 설정
+			dayNamesMin: ['일','월','화','수','목','금','토'], // 요일 텍스트 축약 설정
+			beforeShowDay:disabledSomeday
+		}).datepicker("setDate",null);
+		$('#datepicker').find(".ui-datepicker-current-day").removeClass("ui-datepicker-current-day"); // this actually removes the highlight
+		
+		$( "#datepicker2" ).datepicker({
+			regional: "ko",
+			dateFormat:'yy-mm-dd',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], // 개월 텍스트 설정
+			dayNamesMin: ['일','월','화','수','목','금','토'], // 요일 텍스트 축약 설정
+			beforeShowDay:disabledSomeday
+		}).datepicker("setDate","+1");
+	</script>
+</html>

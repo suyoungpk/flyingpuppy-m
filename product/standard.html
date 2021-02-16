@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0"/>
+	<title>Flying Puppy</title>
+	<meta name="keywords" content="Flying Puppy">
+	<meta name="description" content="Flying Puppy">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet" href="../assets/css/sub.css">
+</head>
+<body>
+	<section class="container">
+		<div id="skipTo">
+			<a href="#menu">메뉴 바로가기</a>
+			<a href="#content">본문 바로가기</a>
+		</div>
+		<div class="pop-area">
+			<header>
+				<h1><span>Flying Puppy</span> Standard Set</h1> 
+				<div class="btn-area right">
+					<button class="btn btn-nav" type="button">네비게이션</button>
+				</div>
+			</header>
+			<nav class="gnb_wrapper" id="menu">
+				<div>	
+					<button class="btn  btn-nav-close" type="button">네비게이션 닫기</button>
+					<!-- 로그인 전 -->
+                    <ul class="gnb">
+                        <li><a href="../main.html">홈</a></li>
+                        <li><a href="../story.html">자연식 소개</a></li>
+                        <li>
+                            <button type="button" id="button-product" onclick="gnbClicked(this.id)">구독 상품
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-product">
+                                <li><a href="../product/standard.html">식단 소개</a></li>
+                                <li><a href="javscript:alert('준비중입니다')">개껌</a></li>
+                                <li><a href="javscript:alert('준비중입니다')">간식</a></li>
+                                <li><a href="../product/supplements.html">식품 보조제</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../review/review.html">고객 후기</a></li>
+                        <li> <button type="button" id="button-center" onclick="gnbClicked(this.id)">고객 센터
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-center">
+                                <li><a href="../center/noticeList.html">공지사항</a></li>
+                                <li><a href="../center/faq.html">자주하는 질문</a></li>
+                                <li><a href="../center/inquire.html">1:1 문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li> <button type="button" id="button-account" onclick="gnbClicked(this.id)">고객 정보
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-account">
+                                <li><a href="../mypage/index.html">마이 페이지</a></li>
+                                <li><a href="../diary/myPuppyList.html">퍼피 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../member/login.html">로그인</a></li>
+                    </ul>
+				</div>
+			</nav>
+			<section id="content" class="sub_wrap product">
+				<main class="standard">
+					<div class="tabslide "><!-- 201021 동적 슬라이딩 구현 -->
+						<ul class="tab-st1 swiper-wrapper"> 
+							<li class="swiper-slide"><a href="#">소고기 식단</a></li>
+							<li class="swiper-slide"><a href="#">돼지고기 식단</a></li>
+							<li class="swiper-slide on"><a href="#">닭고기 식단</a></li>
+							<li class="swiper-slide"><a href="#">양고기 식단</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="photo-list">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<p class="img"><img src="../assets/images/product/img-photo.png"></p>
+								</li>
+								<li class="swiper-slide">
+									<p class="img"><img src="../assets/images/product/img-photo.png"></p>
+								</li>
+								<li class="swiper-slide">
+									<p class="img"><img src="../assets/images/product/img-photo.png"></p>
+								</li>
+							</ul>
+							<button type="button" class="swiper-button-next"></button>
+							<button type="button" class="swiper-button-prev"></button>
+							<div class="swiper-pagination"></div>
+						</div><!-- // photo-list -->
+						<div class="info">
+							<h2>닭고기 식사은 이런 특징을 가지고 있어요!</h2>  <!-- 201021 식단 > 식사 변경 -->
+							<ul>
+								<!-- 201221 수정 -->
+								<li>
+									<!-- <span class="ico ico-product01"></span> -->
+									<p class="img">
+										<img src="../assets/images/icon/ico-char08.png" alt="">
+									</p>
+									영양 균형
+								</li>
+								<li>
+									<!-- <span class="ico ico-product02"></span> -->
+									<p class="img">
+										<img src="../assets/images/icon/ico-char02.png" alt="">
+									</p>
+									면연력 증가
+								</li>
+								<li>
+									<!-- <span class="ico ico-product03"></span> -->
+									<p class="img">
+										<img src="../assets/images/icon/ico-char03.png" alt="">
+									</p>
+									소화 도움
+								</li>
+								<li>
+									<!-- <span class="ico ico-product04"></span> -->
+									<p class="img">
+										<img src="../assets/images/icon/ico-char04.png" alt="">
+									</p>
+									비타민 강화
+								</li>
+								<!--// 201221 수정 -->
+							</ul>
+							<p class="txt">
+								여러 부위의 닭고기를 골고루 다지고,<br>
+								고구마, 해바라기유, 당근, 완두콩, 로즈마리를<br>
+								최적에 비율로 섞어 만든<br>
+								기호성이 가장 좋은 플라잉퍼피의 닭고기 식사입니다. <!-- 201021 식단 > 식사 변경 -->
+							</p>
+						</div>
+						<article class="detail-box">
+							<div class="box">
+								<h2>풍부한 영양소들이 포함된 재료로 만들어졌어요!</h2>
+								<div class="con01">
+								<!-- <div class="graph">
+										<p><img src="../assets/images/product/img-standard-con2.png" alt=""></p>
+										<p>
+											반려견에게도 <strong>5대 영양소</strong>를 골고루 섭취<br>
+											할 수 있도록 신선한 식재료를 사용하여 균형잡히고,<br>
+											건강한 식단으로 구성하였습니다.
+										</p>
+									</div> -->
+								<!-- 201221 수정 -->
+									<div class="graph">
+											<!-- <div class="img-box">
+												<div class="ingredient01">
+													<dl>
+														<dt>단백질</dt>
+														<dd>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+														</dd>
+													</dl>
+												</div>
+												<div class="ingredient02">
+													<dl>
+														<dt>비타민</dt>
+														<dd>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+														</dd>
+													</dl>
+												</div>
+												<div class="ingredient03">
+													<dl>
+														<dt>지방</dt>
+														<dd>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+														</dd>
+													</dl>
+												</div>
+												<div class="ingredient04">
+													<dl>
+														<dt>탄수화물</dt>
+														<dd>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+														</dd>
+													</dl>
+												</div>
+												<div class="ingredient05">
+													<dl>
+														<dt>미네랄</dt>
+														<dd>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+															<span>완두콩</span>
+															<span>켈프분말</span>
+														</dd>
+													</dl>
+												</div>
+												<p class="img"><img src="../assets/images/product/img-standard-con1-1.png" alt=""></p>
+											</div>
+										<p>
+											반려견에게도 <strong>5대 영양소</strong>를 골고루 섭취 할 수 있도록<br>
+											신선한 식재료를 사용하여 균형잡히고, 건강한 식단으로 구성하였습니다.
+										</p>
+									</div>-->
+										<div class="icon-box">
+											<ul>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi04.png" alt=""></p>
+													<p class="name">닭고기</p>
+												</li>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi06.png" alt=""></p>
+													<p class="name">오트밀</p>
+												</li>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi03.png" alt=""></p>
+													<p class="name">고구마</p>
+												</li>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi05.png" alt=""></p>
+													<p class="name">새송이</p>
+												</li>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi01.png" alt=""></p>
+													<p class="name">쥬키니</p>
+												</li>
+												<li>
+													<p class="img"><img src="../assets/images/icon/ico-indi02.png" alt=""></p>
+													<p class="name">당근</p>
+												</li>
+											</ul>
+										</div>
+										<dl>
+											<dt>- 닭고기</dt>
+											<dd>고단백, 저칼로리로  면역체계를 강화하고 체중감량에도 효과적</dd>
+											<dt>- 오트밀</dt>
+											<dd>베타글루칸이 장건강을 돕고 디톡스 역할</dd>
+											<dt>- 고구마</dt>
+											<dd>풍부한 식이섬유가 소화가 도움</dd>
+											<dt>- 새송이</dt>
+											<dd>식이섬유는 지질대사를 개선하여 항비만 효과</dd>
+											<dt>- 쥬키니</dt>
+											<dd>엽산과 마그네슘은 심혈관계를 관리</dd>
+											<dt>- 당근</dt>
+											<dd>풍부한 섬유질과 항산화 효과</dd>
+										</dl>
+									</div><!-- // graph --> 
+								
+								<!--<h2>어디에 좋은지 알아볼까요?</h2>
+								<div class="con01">
+									<dl>
+										<dt>- 닭고기</dt>
+										<dd>필수아미노산, 미네랄, 비타민, 오메가까지 포함된 완벽에 가까운 단백질의 공급원입니다.</dd>
+										<dt>- 고구마</dt>
+										<dd>라이신과 알기닌은 성장기에 도움을 줍니다.</dd>
+										<dt>- 로즈마리</dt>
+										<dd>인, 마그네슘은 뼈를 튼튼하게 합니다.</dd>
+										<dt>- 당근</dt>
+										<dd>이소플라본과 사포닌은 항암작용을 합니다.</dd>
+										<dt>- 완두콩</dt>
+										<dd>풍부한 요오드는 배변활동을 도와줍니다.</dd>
+									</dl>
+								</div>
+								--> 
+								<!--// 201221 수정 -->
+							</div><!--// box -->
+							<div class="box">
+								<h2>영양 정보를 확인해보세요.</h2>
+								<div class="con02">
+									<table title="영양정보">
+										<caption class="hidden">상품 영양정보</caption>
+										<thead>
+											<tr>
+												<th scope="col">칼로리</th>
+												<th scope="col">수분</th>
+												<th scope="col">조단백질</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>248kcal<br><span>(150g 기준)</span></td>
+												<td>80% 이하</td>
+												<td>11% 이상</td>
+											</tr>
+										</tbody>
+									</table>
+									<table title="영양정보">
+										<caption class="hidden">상품 영양정보</caption>
+										<thead>
+											<tr>
+												<th scope="col">조지방</th>
+												<th scope="col">조섬유</th>
+												<th scope="col">조회분</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>4.3% 이하</td>
+												<td>0.8% 이하</td>
+												<td>1.5% 이하</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div><!--// box -->
+							<!-- 201221 수정 -->
+							<div class="more-box">
+								<div class="box">
+									<h2>보관 및 급여 원칙을 지켜주세요!</h2>
+									<div class="con03">
+										<ul class="con-list">
+											<li>
+												<p><img src="../assets/images/product/ico-rule01.png" alt="아이콘"></p>
+												<p class="tit">냉동 보관 원칙</p>
+												<p class="txt">
+													배송받은 식단은 바로 냉동보관해주세요.<br>
+													보관기간은 3개월 이내입니다.
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-rule02.png" alt="아이콘"></p>
+												<p class="tit">냉장 해동 원칙</p>
+												<p class="txt">
+													해동은 냉장을 원칙으로 하며,<br>
+													냉장 보관은 5일 이내로 해주세요.
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-rule03.png" alt="아이콘"></p>
+												<p class="tit">상온 즉시 급여 원칙</p>
+												<p class="txt">
+													상온에 노출된 식단은<br>
+													즉시 급여를 원칙으로 합니다.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div><!--// box -->
+								<div class="box">
+									<h2>이렇게 먹여보세요!</h2>
+									<div class="con04">
+										<ul class="con-list">
+											<li>
+												<div>
+													<p><img src="../assets/images/product/ico-obj01.png" alt="아이콘"></p>
+													<p class="tit">전자레인지로 2분만 돌려주세요.</p>
+													<p class="txt">
+														냉장실에서 자연해동 후 이용해주세요.<br>
+														차가운 물에 담가 해동해도 좋습니다.<br>
+														해동 후 재냉동은 하지마세요.
+													</p>
+												</div>
+											</li>
+											<li>
+												<div>
+													<p><img src="../assets/images/product/ico-obj02.png" alt="아이콘"></p>
+													<p class="tit">후라이팬에 약간의 조리도 괜찮아요.</p>
+													<p class="txt">
+														자연해동된 식사를 약한 불에 살짝 볶은 후<br>
+														배식해도 좋습니다.<br>
+														기름은 사용하지 마세요.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div><!--// box -->
+								<!--
+								<div class="box">
+									<h2>플라잉퍼피 식단은 믿고 먹을 수 있어요.</h2>
+									<div class="con05">
+										<ul class="con-list2">
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product01.png" alt=""></p>
+												<div>
+													<p class="tit">01</p>
+													<p class="txt">
+														산지에서 직접 공수한<br>
+														신선한 재료를 사용합니다.
+													</p>
+												</div>
+											</li>
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product02.png" alt=""></p>
+												<div>
+													<p class="tit">02</p>
+													<p class="txt">
+														방진복을 착용하여<br>
+														이물질을 완벽하게 차단합니다.
+													</p>
+												</div>
+											</li>
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product03.png" alt=""></p>
+												<div>
+													<p class="tit">03</p>
+													<p class="txt">
+														HACCP인증을 취득한<br>
+														안전한 관리시설에서 제조됩니다.
+													</p>
+												</div>
+											</li>
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product04.png" alt=""></p>
+												<div>
+													<p class="tit">04</p>
+													<p class="txt">
+														식품의 신선도 유지를 위한 포장과<br>
+														주소지까지 안전한 배송을 약속합니다.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>--><!--// box -->
+								<!--<div class="box">
+									<h2 class="two">플라잉퍼피 정기구독!<br>
+										어떤 점이 좋은가요?</h2>
+									<div class="con06">
+										<ul class="con-list">
+											<li>
+												<p><img src="../assets/images/product/ico-obj03.png" alt="아이콘"></p>
+												<p class="tit">가성비가 좋습니다!</p>
+												<p class="txt">
+													월 10만원으로 하루 2끼의<br>
+													신선하고, 건강한 식단을 제공합니다
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-obj04.png" alt="아이콘"></p>
+												<p class="tit">든든합니다!</p>
+												<p class="txt">
+													영양 균형과 맞춤형 권장량을 고려한<br>
+													완벽한 식단입니다.
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-obj05.png" alt="아이콘"></p>
+												<p class="tit">믿을 수 있습니다!</p>
+												<p class="txt">
+													신선한 재료와 조리방식으로<br>
+													꼼꼼한 식단을 제공합니다.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div> --><!--// box -->
+								<!--<div class="box">
+									<h2>우리 아이가 달라집니다!</h2>
+									<div class="con07">
+										<ul class="con-list2">
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product05.png" alt=""></p>
+												<div>
+													<p class="tit">행복지수 UP</p>
+													<p class="txt">
+														다양한 종류의 좋은 식재료로<br>
+														반려견의 식사시간이 행복해집니다.
+													</p>
+												</div>
+											</li>
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product06.png" alt=""></p>
+												<div>
+													<p class="tit">건강지수 UP</p>
+													<p class="txt">
+														좋은영양소를 골고루 챙긴 식단은<br>
+														반려견을 더욱 건강하고 오래살 수 있게 해줍니다.
+													</p>
+												</div>
+											</li>
+											<li>
+												<p class="img"><img src="../assets/images/product/img-product07.png" alt=""></p>
+												<div>
+													<p class="tit">활력지수 UP</p>
+													<p class="txt">
+														건강하고 좋은 식사는<br>
+														반려견의 생활에 활력을 불어 넣어줍니다.	
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>--><!--// box -->
+								<!--<div class="box">
+									<h2 class="two">
+										풀팩과 하프팩<br>
+										두 가지 구성으로 준비했습니다.
+									</h2>
+									<div class="con08">
+										<ul class="con-list3 center">
+											<li>
+												<div class="img"><p class="tit">하프팩 (Harf Pack)</p></div>
+												<p class="txt">
+													28개(2주간 식사)<br> 
+													2주 단위로 정기 배송됩니다.<br>
+													하루 두 끼, 2주간의 식사로 구성되었습니다.
+												</p>
+											</li>
+											<li>
+												<div class="img">
+													<p class="tit">풀팩 (Full Pack)</p>
+												</div>
+												<p class="txt">
+													56개(4주간 식사)<br>
+													4주 단위로 정기 배송됩니다.<br>
+													하루 두 끼, 한 달간의 식사로 구성되었습니다.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div> --><!--// box -->
+								<div class="box">
+									<h2 class="two">
+										자연식이 처음이라면 이렇게 급여해 보세요.
+									</h2>
+									<div class="con09">
+										<p class="txt">반려견이 새로운 식단에 낯설어 하는 경우에는 순차
+											적으로 적응할 수 있게 해주는 것이 좋습니다.<br>
+											식사가 바뀌면 소화가 약한 반려견은 가벼운 설사와 구토를
+											동반하는 경우도 있으니 새로운 식사에 적응 할 시간을
+											주시는 것이 좋아요.</p>
+										<ul class="diet-step">
+											<li>1~2일</li>
+											<li>3~4일</li>
+											<li>5~6일</li>
+											<li>7일~</li>
+										</ul>
+										<div class="diet-info">
+											<p><span class="ico yellow"></span>기존사료</p>
+											<p><span class="ico pupple"></span>플라잉퍼피 자연식</p>
+										</div>
+										<!-- <div class="help">
+											<p class="tit">이럴 경우 하프팩을 이용해 보세요!</p>
+											<p class="sub">
+												자연식을 처음 경험하는 아이들에게 자연스럽게<br>
+												적응할 수 있도록 도움을 줍니다.
+											</p>
+											<p class="txt">
+												- 불가피하게 건식 사료 등 기타 사료와 혼용해야 하는 경우<br>
+												- 자연식이 처음이라 아이에게 잘 맞는지 알아보고 싶은 경우<br>
+												- 특별 처방식을 먹여야하여 보조적인 식사가 필요한 경우
+											</p>
+										</div> -->
+									</div>
+								</div><!--// box -->
+								<div class="box">
+									<h2 class="two">플라잉퍼피 정기구독!<br>
+										어떤 점이 좋은가요?</h2>
+									<div class="con06">
+										<ul class="con-list">
+											<li>
+												<p><img src="../assets/images/product/ico-obj03.png" alt="아이콘"></p>
+												<p class="tit">가성비가 좋습니다!</p>
+												<p class="txt">
+													월 10만원으로 하루 2끼의<br>
+													신선하고, 건강한 식단을 제공합니다
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-obj04.png" alt="아이콘"></p>
+												<p class="tit">든든합니다!</p>
+												<p class="txt">
+													영양 균형과 맞춤형 권장량을 고려한<br>
+													완벽한 식단입니다.
+												</p>
+											</li>
+											<li>
+												<p><img src="../assets/images/product/ico-obj05.png" alt="아이콘"></p>
+												<p class="tit">믿을 수 있습니다!</p>
+												<p class="txt">
+													신선한 재료와 조리방식으로<br>
+													꼼꼼한 식단을 제공합니다.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div><!--// box -->
+								<div class="box">
+									<h2>급여 시 주의해주세요!</h2>
+									<div class="con10">
+										<ul class="con-list4">
+											<li>
+												<p class="tit">이상 시 전문가와 상의</p>
+												<p class="txt">
+													급여 중 이상이 있을 시<br>
+													급여를 중단하고 전문가와 상의해주세요.
+												</p>
+											</li>
+											<li>
+												<p class="tit">든든합니다!</p>
+												<p class="txt">
+													본 식단은 질병 치료의 목적이 아닙니다.<br>
+													질병 치료 목적의 특별식은 전문가의 지도에 따라주세요.
+												</p>
+											</li>
+											<li>
+												<p class="tit">믿을 수 있습니다!</p>
+												<p class="txt">
+													알러지가 있는 식재료가<br>
+													포함된 식단은 급여에 주의해주세요.
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div><!--// box -->
+								<!--<div class="box">
+									<h2>
+										알레르기 유발 식품을
+										확인해보세요.
+									</h2>
+									<div class="con11">
+										<ul class="con-list">
+											<li><p class="tit">닭고기</p></li>
+											<li><p class="tit">소고기</p></li>
+											<li><p class="tit">돼지고기</p></li>
+											<li><p class="tit">연어</p></li>
+											<li><p class="tit">고구마</p></li>
+											<li><p class="tit">당근</p></li>
+											<li><p class="tit">감자</p></li>
+											<li><p class="tit">양배추</p></li>
+											<li><p class="tit">토마토</p></li>
+											<li><p class="tit">호박</p></li>
+											<li><p class="tit">대두</p></li>
+											<li><p class="tit">보리</p></li>
+										</ul>
+										<dl>
+											<dt><span class="ico ico-alert"></span>주의사항</dt>
+											<dd>
+												본 제품은 알레르기를 일으킬 수 있는 닭고기, 소고기, 돼지고기, 연어, 감자, 고구마, 당근, 양배추, 토마토, 호박 대두, 보리를 사용한 제품과 같은 시설에서 제조하고 있으니 알레르기에 예민한 경우 주의해주세요.<br><br>
+												균형잡힌 자연식으로 설계된 식단이기 때문에, 원재료의 변경은 불가능한점 양해부탁드립니다.<br><br>
+												알레르기 반응은 경우에 따라 상이하지만, 식단 선택에서 유의 부탁드립니다.
+											</dd>
+										</dl>
+									</div>
+								</div>--><!--// box -->
+								<div class="box">
+									<h2>FAQ</h2>
+									<div class="con13">
+										<dl>
+											<dt>급여 중 체중변화나 활동량 변화처럼 아이에게 변화가 있는 경우에는 어떻게 해야 하나요? </dt>
+											<dd>
+												음식이나 생활환경이 변하면 아이들에게도 다양한 변화가
+												보여질 수 있습니다. 꼼꼼히 모니터링 해 주시고 저희에게
+												말씀 주시면 다음 식단에 적극 반영해 드립니다. 
+												퍼피다이어리에서 반려견의 상태를 업데이트 해주시는 것도
+												좋은 방법입니다.
+											</dd>
+											<dt>자연식을  시작했는데 설사를 해요. 괜찮을까요?</dt>
+											<dd>기존의 건식 또는 레토르트 식단을 먹던 아이들이 자연식을
+												만나게 되면 초반에 가벼운 설사나 구토 증상을 보이기도
+												합니다. 초기에만 나타나는 일시적인 증상이기는 하지만
+											   지속되거나 다른 이상증상도 동반하는 경우라면 급여를
+												중단하시고 전문의와 상담하시는 것이 좋습니다.</dd>
+											<dt>다른 종류의 사료와 함께 급여해도 될까요?</dt>
+											<dd>플라잉퍼피는 하루권장량에 맞춰 포장되어집니다. 아이들의
+												개별맞춤된 식단을 다른 종류의 식사 또는 간식과 함께 급여시
+												에는 칼로리와 영양성분의 확인이 필요합니다. 
+												가급적 체계적으로 설계된 플라잉퍼피 식단을 따라 주시기를
+												권장드립니다.</dd>
+										</dl>
+									</div>
+								</div><!--// box -->
+							<!--// 201221 수정 -->
+								<div class="box">
+									<h2>상세 정보</h2>
+									<div class="con12">
+										<dl>
+											<dt>제품명</dt>
+											<dd>모든 반려견이 함께 먹을 수 있는 Flying Puppy Standard Set (소고기 식단, 돼지고기 식단, 닭고기 식단, 양고기 식단)</dd>
+											<dt>내용량</dt>
+											<dd>반려견 마다 상이</dd>
+											<dt>식품의 유형</dt>
+											<dd>즉석 섭취 식품</dd>
+											<dt>원재료명</dt>
+											<dd>식단 정보 및 상품이미지 참조</dd>
+											<dt>영양정보</dt>
+											<dd>식단 정보 및 상품이미지 참조</dd>
+											<dt>유통기한</dt>
+											<dd>제조일로부터 20일, 제조일 별도 표기</dd>
+											<dt>제조원</dt>
+											<dd>뚜껑 : PET / 용기 : PET</dd>
+											<dt>업소명 및 소재지</dt>
+											<dd>
+												본사 : (주)밥먹자<br>
+														서울특별시 강남구테헤란로 431,<br>
+														7층 7021호 (삼성동, 저스트코타워)
+											</dd>
+											<dt>보관방법</dt>
+											<dd>-5 ~ 0℃ 냉동보관</dd>
+											<dt>소비자 상담실</dt>
+											<dd>대표전화 (주)밥먹자 0000-0000</dd>
+											<dt>반품 및 교환 장소</dt>
+											<dd>제조원 및 판매원</dd>
+											<dt>주의 사항</dt>
+											<dd>
+												- 이 제품은 밀, 대두, 토마토, 돼지고기, 닭고기, 새우, 땅콩을 사용한 제품과 같은 시설에서 제조하고 있습니다.<br>
+												- 유통기한 내 섭취를 권장합 니다.<br>
+												- 최대한 빨리 섭취하거나 냉동보관(-5~0℃)하시기 바랍니다.<br>
+												- 상품 구성 및 함 내 섭취를 권장합 니다.<br>
+												- 상품 구성 및 함 표기된 것과 다소 다를 수 있습니다.<br>
+												- 상품 구성은 계절에 따라 변동될 수 있습니다.<br>
+												- 상품 개봉 시 다칠 위험이 있습니다.<br>
+												- 제공된 식기 사용시 다칠 위험이 있을 수 있습니다.<br>
+												- 상품에 이상이 있을 시 본사로 문의하시길 바랍니다
+											</dd>
+										</dl>
+									</div>
+								</div><!--// box -->
+							</div>
+						</article>
+						<div class="btn-area">
+							<button class="btn btn-gray-line big btn-more" type="button">식단 정보 더보기</button>
+						</div>
+						<div class="btn-top-area"><button class="btn btn-top" type="button">TOP</button></div>
+						<div class="float-bar">
+							<button class="btn btn-blue big" type="button">구독하기</button>
+						</div>
+						<!-- 201021 팝업 추가 -->
+						<div class="popup popup-st2 pop-mydogopt" id="mydogOpt">
+							<div class="popup-wrapper">
+								<div class="pop-container">
+								<div class="pop-tit">
+									반려견 선택
+								</div>
+								<div class="pop-con">
+									<ul class="opts-list list-box">
+										<li>
+											<div class="cell">
+												<span class="radio-box">
+													<input type="radio" name="dog" id="dog01" checked>
+													<label for="dog01"></label>
+												</span>
+											</div>
+											<div class="cell">
+												<p class="img"><img src="http://placehold.it/400x400" alt=""></p>
+											</div>
+											<div class="cell">
+												<div class="base">
+													<p class="status"><span class="ico ico-text yellow">구독 중</span></p>
+													<p class="name male"><!-- 성별 남일 경우 male, 여일경우 female class추가  -->
+														철수
+													</p>
+													<p>믹스</p>
+													<p class="birth">2016년 05월 20일 생</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="cell">
+												<span class="radio-box">
+													<input type="radio" name="dog" id="dog02">
+													<label for="dog02"></label>
+												</span>
+											</div>
+											<div class="cell">
+												<p class="img"></p>
+											</div>
+											<div class="cell">
+												<div class="base">
+													<p class="status"><span class="ico ico-text gray">구독 예정</span></p>
+													<p class="name female"><!-- 성별 남일경우 male, 여일경우 female class추가  -->
+														철순
+													</p>
+													<p>비숑프리제</p>
+													<p class="birth">2016년 05월 20일 생</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<p class="text red">구독 중인 반려견은 중복 구독이 되지 않습니다.</p>
+								</div>
+								<div class="pop-btn">
+									<button type="button" class="btn btn-blue big">반려견 선택 후 구독하기</button>
+								</div>
+								</div>
+								<button type="button" class="btn-close">팝업 닫기</button>
+							</div>
+						</div><!-- popup -->
+						<!--// 201021 팝업 추가 -->
+					</div>
+				</main>
+			</section><!--// content -->
+			<div class="popup2 popup-st1 terms" id="pop-terms01">
+				<div class="popup-wrapper">
+					<div class="pop-container">
+						<div class="pop-tit">
+							<h1>이용약관</h1>
+						</div>
+						<div class="pop-con">
+							<p>
+								주식회사 밥먹자(이하 '밥먹자'라고만 합니다)는 밥먹자가 제공하는
+								서비스의 기획부터
+								종료까지 「정보통신망 이용촉진 및 정보보호 등에 
+								관한 법률」(이하 ‘정보통신망법’이라고
+								만 합니다) 등 국내의 개인정보 
+								보호 관련 법령을 철저히 준수합니다. <br><br>
+		
+								밥먹자는 이용자의
+								개인정보 보호 및 권익을 보호하고 개인정보와 
+								관련한 이용자의 고충을 원활하게 처리할
+								수 있도록 다음과 같은 
+								처리방침을 두고 있습니다.<br><br>
+		
+								본 개인정보처리방침의 목차는 아래와 같습니다.<br><br>
+		
+								1.개인정보처리방침의 의의<br>
+								2.수집하는 개인정보의 항목과 수집ㆍ이용 목적 (필수 안내사항)<br>
+								3.개인정보의 수집 방법 (필수 안내사항)<br>
+								4.개인정보의 제공 및 위탁 (필수 안내사항)<br>
+								5.개인정보의 보유 기간 (필수 안내사항)<br>
+								6.개인정보의 파기 (필수 안내사항)<br>
+								7.정보주체와 법정대리인의 권리·의무 및 그 행사 방법 (필수 안내사항)<br>
+								8.개인정보의 안정성 확보조치에 관한 사항<br>
+								9.개인정보 자동 수집 장치의 설치·운영 및 그 거부에 관한 사항 (필수 안내사항)<br>
+								10.개인정보 보호책임자 및 담당자 안내 (필수 안내사항)<br>
+								11.본 개인정보처리방침의 적용 범위<br>
+								12.개인정보처리방침 변경 전 고지 의무<br>
+								1. 개인정보처리방침의 의의<br>
+								밥먹자는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, 밥먹자가 제공하는
+								서비스 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고 상세하게 설명하기 위해
+								노력하였습니다.<br>
+								이는 쉬운 용어를 사용한 개인정보처리방침 작성 원칙인 ‘Plain Language Privacy
+								Policy(쉬운 용어를 사용한 개인정보처리방침)’와 2019. 6. 25일 시행된 정보통신망법
+								제22조 제3항을 반영한 것입니다.<br>
+								개인정보처리방침은 다음과 같은 중요한 의미를 가지고 있습니다.<br>
+								• 밥먹자가 어떤 정보를 수집하고, 수집한 정보를 어떻게 사용하며, 필요에 따라 누구와
+								이를 공유(‘위탁 또는 제공’)하며, 이용목적을 달성한 정보를 언제·어떻게 파기하는지 등
+								의 정보를 투명하게 제공합니다
+							</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st1 terms" id="pop-terms02">
+				<div class="popup-wrapper">
+					<div class="pop-container">
+						<div class="pop-tit">
+							<h1>개인정보처리방침</h1>
+						</div>
+						<div class="pop-con">
+							<p>
+								주식회사 밥먹자(이하 '밥먹자'라고만 합니다)는 밥먹자가 제공하는
+								서비스의 기획부터
+								종료까지 「정보통신망 이용촉진 및 정보보호 등에 
+								관한 법률」(이하 ‘정보통신망법’이라고
+								만 합니다) 등 국내의 개인정보 
+								보호 관련 법령을 철저히 준수합니다. <br><br>
+		
+								밥먹자는 이용자의
+								개인정보 보호 및 권익을 보호하고 개인정보와 
+								관련한 이용자의 고충을 원활하게 처리할
+								수 있도록 다음과 같은 
+								처리방침을 두고 있습니다.<br><br>
+		
+								본 개인정보처리방침의 목차는 아래와 같습니다.<br><br>
+		
+								1.개인정보처리방침의 의의<br>
+								2.수집하는 개인정보의 항목과 수집ㆍ이용 목적 (필수 안내사항)<br>
+								3.개인정보의 수집 방법 (필수 안내사항)<br>
+								4.개인정보의 제공 및 위탁 (필수 안내사항)<br>
+								5.개인정보의 보유 기간 (필수 안내사항)<br>
+								6.개인정보의 파기 (필수 안내사항)<br>
+								7.정보주체와 법정대리인의 권리·의무 및 그 행사 방법 (필수 안내사항)<br>
+								8.개인정보의 안정성 확보조치에 관한 사항<br>
+								9.개인정보 자동 수집 장치의 설치·운영 및 그 거부에 관한 사항 (필수 안내사항)<br>
+								10.개인정보 보호책임자 및 담당자 안내 (필수 안내사항)<br>
+								11.본 개인정보처리방침의 적용 범위<br>
+								12.개인정보처리방침 변경 전 고지 의무<br>
+								1. 개인정보처리방침의 의의<br>
+								밥먹자는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, 밥먹자가 제공하는
+								서비스 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고 상세하게 설명하기 위해
+								노력하였습니다.<br>
+								이는 쉬운 용어를 사용한 개인정보처리방침 작성 원칙인 ‘Plain Language Privacy
+								Policy(쉬운 용어를 사용한 개인정보처리방침)’와 2019. 6. 25일 시행된 정보통신망법
+								제22조 제3항을 반영한 것입니다.<br>
+								개인정보처리방침은 다음과 같은 중요한 의미를 가지고 있습니다.<br>
+								• 밥먹자가 어떤 정보를 수집하고, 수집한 정보를 어떻게 사용하며, 필요에 따라 누구와
+								이를 공유(‘위탁 또는 제공’)하며, 이용목적을 달성한 정보를 언제·어떻게 파기하는지 등
+								의 정보를 투명하게 제공합니다
+							</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+		</div><!--// pop-area -->
+		<footer>
+			<h1 class="hidden">사이트 정보</h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="../intro/intro.html">서비스 소개</a></li>
+					<li><a href="javascript:void(0)" onclick="openPop('pop-terms01')">이용약관</a></li>
+					<li><a href="javascript:void(0)" onclick="openPop('pop-terms02')">개인정보처리방침</a></li>
+				</ul>
+			</nav>
+			<div class="con">
+				<ul class="info">
+					<li>주식회사 밥먹자</li>
+					<li>대표자 : 구본하</li>
+				</ul>
+				<ul class="info">
+					<li>개인정보보호 책임자 : 임아롱</li>      
+					<li>사업자등록번호 : 104-88-01459</li>      
+					<li>통신판매업 : 제 2020-서울강남-0000호</li>
+				</ul>
+				<p><address>서울특별시 강남구 테헤란로 431, 7층 7021호<br>(삼성동, 저스트코타워)</address></p>
+				<p><a href="mailto:flyingpuppy_help@bobmukza.com">flyingpuppy_help@bobmukza.com</a></p>
+				<p class="copyright">&#169; BOBMUKZA 2020 co., Ltd. All right reserved.</p>
+			</div>
+			<ul class="sns">
+				<li><a href="/" target="_blank" title="새 창" class="ico facebook btn-sns">facebook</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico instagram btn-sns">instagram</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico youtube btn-sns">youtube</a></li>
+			</ul>
+		</footer>
+	</section> 
+	<script type="text/javascript" charset="utf-8" src="../assets/js/jquery-3.4.1.min.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="../assets/js/swiper.min.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="../assets/js/perfect-scrollbar.min.js"></script>		
+	<script type="text/javascript" charset="utf-8" src="../assets/js/common.js"></script>
+	<script>
+		var swiper = new Swiper('.photo-list', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			}
+		});
+		$(function(){
+			$(".btn-more").click(function(){
+				$('.product').toggleClass('open');
+			});
+		});
+	</script>
+</body>
+</html>

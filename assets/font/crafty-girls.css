@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* crafty-girls-regular - latin */
+@font-face {
+	font-family: 'Crafty Girls';
+	font-style: normal;
+	font-weight: 400;
+	src: url('crafty-girls-v10-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local(''),
+		 url('crafty-girls-v10-latin-regulard41d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('crafty-girls-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('crafty-girls-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+		 url('crafty-girls-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('crafty-girls-v10-latin-regular.svg#CraftyGirls') format('svg'); /* Legacy iOS */
+  }

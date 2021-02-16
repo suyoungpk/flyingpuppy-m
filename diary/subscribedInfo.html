@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0"/>
+	<title>Flying Puppy</title>
+	<meta name="keywords" content="Flying Puppy">
+	<meta name="description" content="Flying Puppy">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico" />
+	<link rel="stylesheet" href="../assets/css/sub.css">
+</head>
+<body>
+	<section class="container">
+		<div id="skipTo">
+			<a href="#menu">메뉴 바로가기</a>
+			<a href="#content">본문 바로가기</a>
+		</div>
+		<div class="pop-area">
+			<header>
+				<div class="btn-area left">
+					<button class="btn btn-back" type="button" onclick="history.back()">뒤로가기</button> 
+				</div>
+				<h1>구독정보</h1>
+			</header>
+			<nav class="gnb_wrapper" id="menu">
+				<div>	
+					<button class="btn  btn-nav-close" type="button">네비게이션 닫기</button>
+					<!-- 로그인 전 -->
+                    <ul class="gnb">
+                        <li><a href="../main.html">홈</a></li>
+                        <li><a href="../story.html">자연식 소개</a></li>
+                        <li>
+                            <button type="button" id="button-product" onclick="gnbClicked(this.id)">구독 상품
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-product">
+                                <li><a href="../product/standard.html">식단 소개</a></li>
+                                <li><a href="javscript:alert('준비중입니다')">개껌</a></li>
+                                <li><a href="javscript:alert('준비중입니다')">간식</a></li>
+                                <li><a href="../product/supplements.html">식품 보조제</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../review/review.html">고객 후기</a></li>
+                        <li> <button type="button" id="button-center" onclick="gnbClicked(this.id)">고객 센터
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-center">
+                                <li><a href="../center/noticeList.html">공지사항</a></li>
+                                <li><a href="../center/faq.html">자주하는 질문</a></li>
+                                <li><a href="../center/inquire.html">1:1 문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li> <button type="button" id="button-account" onclick="gnbClicked(this.id)">고객 정보
+                                <img class="gnb-arrow" src="../assets/images/intro/gnb-arrow.png" />
+                            </button>
+                            <ul id="tab-account">
+                                <li><a href="../mypage/index.html">마이 페이지</a></li>
+                                <li><a href="../diary/myPuppyList.html">퍼피 다이어리</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../member/login.html">로그인</a></li>
+                    </ul>
+				</div>
+			</nav>
+			<section id="content" class="sub_wrap diary">
+				<form action="">
+					<main class="subscribeInfo">
+						<h1>철수의 <strong>구독정보</strong></h1>
+						<p class="txt">Flying Puppy의 자연식이 맛있게 조리되고 있습니다.</p>
+						<ol class="step">
+							<li class="on"><span class="ico ico-st1 step0 on"></span><p>식단 준비 중</p></li>
+							<!-- <li><span class="ico ico-st1 step1 on"></span><p>조리 중</p></li>
+							<li><span class="ico ico-st1 step2 on"></span><p>조리 완료</p></li>
+							<li><span class="ico ico-st1 step3 on"></span><p>배송 중</p></li>
+							<li><span class="ico ico-st1 step4 on"></span><p>배송 완료</p></li> -->
+						</ol>
+						<div class="subscribe-board">
+							<div class="board-wrapper">
+								<h3 class="title">상세정보</h3>
+								<ul class="board-st1">
+									<li>
+										<dl>
+											<dt>상품명</dt>
+											<!-- 201021 상품명 변경 -->
+											<dd>Flying Puppy Standard 식단 - 하프 팩</dd>
+										</dl>
+										<div class="btn-area">
+											<a href="javascript:void(0)" onclick="openPop('pop-product')">상품변경</a>
+										</div>
+									</li>
+									<li>
+										<dl>
+											<dt>식단수량</dt>
+											<dd>
+												<ul class="list">	<!-- 201021 식단 단어 제거 -->
+													<li><span class="dietname">소고기</span> <strong>: 0개</strong></li>
+													<li><span class="dietname">닭고기</span> <strong>: 0개</strong></li>
+													<li><span class="dietname">돼지고기</span> <strong>: 0개</strong></li>
+													<li><span class="dietname">양고기</span> <strong>: 0개</strong></li>
+												</ul>
+												<p class="calory"><strong>철수</strong>의 한끼 식사 권장 칼로리는 <strong>367 Kcal</strong> 입니다.</p>
+											</dd>
+											<dd class="btn-area">
+												<a href="javascript:void(0)" onclick="openPop('pop-cnt')">수량 변경</a>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>추가 구독 상품</dt>
+											<dd>
+												<ul class="list2"> 	<!-- 201021 추가구독상품 상품 내용 변경 -->
+													<li><strong>트릿 (1일 4ea x 14)</strong></li>
+													<li><strong>버블껌 (1일 1ea x 14)</strong></li>
+													<li><strong>황태 (1일 4g x 14)</strong></li>
+												</ul>
+											</dd>
+											<dd class="btn-area">
+												<a href="javascript:void(0)" onclick="openPop('pop-subscribe')">구독 상품 변경</a>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+								<p class="help">- 추가 구독 상품은 4주에 한 번, 1차 배송 때 구독하신 식단과 함께 배송 됩니다.</p>
+							</div><!--// board-wrapper -->
+							<div class="board-wrapper">
+								<h3 class="title">배송 및 결제정보</h3>
+								<ul class="board-st1">
+									<li>
+										<dl>
+											<dt>배송지</dt>
+											<dd>
+												<p>강민경</p>
+												<p>06241  서울시 강남구 테헤란로 2길 27 8층 807호</p>
+												<p><span>010-1234-5678</span></p>
+											</dd>
+											<dd class="btn-area">
+												<a href="javascript:void(0)" onclick="openPop('pop-adrs')">배송지 변경</a>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다음 배송 예정일</dt>
+											<dd>
+												<p>2020.05.06 수요일 배송 예정
+													
+												</p>
+											</dd>
+											<dd><button type="button" class="btn btn-gray-line small" onclick="openPop('pop-predelivery')">식단 미리 배송 받기</button></dd>
+											<dd class="btn-area">
+												<a href="javascript:void(0)" onclick="openPop('pop-chgdate')">수령일 변경</a>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다음 결제 예정일</dt>
+											<dd>
+												<p>2020.05.13</p>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>다음 결제 예정금액</dt>
+											<dd class="price"><del>100,000</del> <strong>75,000원</strong></dd>
+											<dd>
+												<button class="btn btn-gray-line small" type="button" onclick="openPop('pop-coupon')">쿠폰적용</button>
+											</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt>결제 수단</dt>
+											<dd>
+												<p>신용카드</p>
+											</dd>
+											<dd class="btn-area">
+												<a href="javascript:void(0)" onclick="openPop('pop-payway')">결제 수단 변경</a> <!-- 201221 추가 -->
+											</dd>
+										</dl>
+									</li>
+								</ul>
+							</div><!--// board-wrapper -->
+							<p class="text red">
+								※ 구독 정보가 변경 되었다면, [구독 정보 저장하기]로 꼭 저장해주세요.	
+							</p>
+							<!-- 201109 버튼 추가 -->
+							<p class="btn-area flex">
+								<button type="button" class="btn btn-blue big btn-save">구독 정보 저장하기</button>
+								<button type="button" class="btn btn-blue-line big ">교환 신청</button>
+								<button type="button" class="btn btn-gray big ">주문 취소</button>
+								<button type="button" class="btn btn-gray-line big ">취소 신청</button>
+							</p>
+							<!--// 201109 버튼 추가 -->
+						</div>
+					</main>
+				</form>
+				<div class="btn-top-area"><button class="btn btn-top" type="button">TOP</button></div>
+			</section><!--// content -->
+			<!-- popup zone-->
+			<div class="popup2 popup-st pop-product" id="pop-product">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>상품 변경</h1>
+					</div>
+					<div class="pop-con">
+							<!-- 201021 화면 변경 -->
+						<ul class="product-list">
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="chgproduct" id="pro02">
+									<label for="pro02">
+										하프 팩<br>
+										<span class="price">46,500원</span>
+									</label>
+								</span>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="chgproduct" id="pro01" checked>
+									<label for="pro01">
+										풀 팩<br>
+										<span class="price">89,000원</span>
+									</label>
+								</span>
+							</li>
+						</ul>
+						<p class="info">
+							※ 하프 팩 : 28개(2주 식단) 2주 간격 배송<br>
+							※ 풀 팩 : 56개(4주 식단) 4주 간격 배송
+						</p>
+						<!--// 201021 화면 변경 -->
+						<div class="pop-btn">
+							<p class="text red">※ 상품 변경 시 구독 결제 금액이 변경 됩니다.</p>
+							<button type="button" class="btn btn-blue big">상품 변경하기</button>
+						</div>
+					</div>
+					<button class="btn btn-close" type="button">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st pop-cnt" id="pop-cnt">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>수량변경</h1>
+					</div>
+					<div class="pop-con">
+						<!-- 201021 식단 텍스트 삭제 -->
+						<ul class="diet-list">
+							<li>
+								<p>소고기</p>
+								<div class="right">
+									<div class="select-box">
+										<label for="selectbox" class="selected-option">0</label>
+										<select name="" value="1" id="selectbox">
+											<option value="1">0</option>
+											<option value="2">1</option>
+											<option value="3">3</option>
+											<option value="4"selected>4</option>
+										</select>
+								   </div>
+								</div>
+							</li>
+							<li>
+								<p>닭고기</p>
+								<div class="right">
+									<div class="select-box">
+										<label for="selectbox" class="selected-option">0</label>
+										<select name="" value="1" id="selectbox">
+											<option value="1"selected>0</option>
+											<option value="2">1</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+								   </div>
+								</div>
+							</li>
+							<li>
+								<p>칠면조고기</p>
+								<div class="right">
+									<div class="select-box">
+										<label for="selectbox" class="selected-option">0</label>
+										<select name="" value="1" id="selectbox">
+											<option value="1">0</option>
+											<option value="2"selected>1</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+								   </div>
+								</div>
+							</li>
+							<li>
+								<p>양고기</p>
+								<div class="right">
+									<div class="select-box">
+										<label for="selectbox" class="selected-option">0</label>
+										<select name="" value="1" id="selectbox">
+											<option value="1">0</option>
+											<option value="2">1</option>
+											<option value="3" selected>3</option>
+											<option value="4">4</option>
+										</select>
+								   </div>
+								</div>
+							</li>
+							<!--// 201021 식단 텍스트 삭제 -->
+						</ul>
+						<div class="pop-btn">
+							<div class="result">
+								<p>(선택한 수량/ 2주 식사량)</p>
+								<p class="total">
+									<strong>28</strong>/28
+								</p>
+							</div>
+							<button type="button" class="btn btn-blue big">수량 변경하기</button>
+						</div>
+					</div>
+					<button class="btn btn-close" type="button">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st pop-subscribe" id="pop-subscribe">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>구독 상품 변경</h1>
+					</div>
+					<div class="pop-con">
+						<div class="product-list">
+							<!-- 201021 상품 변경 -->
+							<!-- <p class="tit">퍼피 플러스 식품 보조제</p>
+							<p class="des">우리 아이에게 부족한 영양을 보충해 주세요.<br>식단과 함께 배송됩니다.</p> -->
+							<ul>
+								<li>
+									<p class="tit">간식</p>
+									<p class="img"><img src="http://placehold.it/114x114" alt=""></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro1" checked>
+											<label for="pro1"></label>
+										</span>
+									</p>
+									<p class="name">
+										트릿<br>(1일 4ea x 14)
+									</p>
+									<p class="price">
+										<del>25,500원</del><br>
+										21,200원
+									</p>
+								</li>
+								<li>
+									<p class="tit">개껌</p>
+									<p class="img"><img src="http://placehold.it/114x114" alt=""></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro1" checked>
+											<label for="pro1"></label>
+										</span>
+									</p>
+									<p class="name">
+										트릿<br>(1일 4ea x 14)
+									</p>
+									<p class="price">
+										<del>25,500원</del><br>
+										21,200원
+									</p>
+								</li>
+								<li>
+									<p class="tit">식품 보조제</p>
+									<p class="img"><img src="http://placehold.it/114x114" alt=""></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro1" checked>
+											<label for="pro1"></label>
+										</span>
+									</p>
+									<p class="name">
+										트릿<br>(1일 4ea x 14)
+									</p>
+									<p class="price">
+										<del>25,500원</del><br>
+										21,200원
+									</p>
+								</li>
+							</ul>
+						</div>
+						<!-- <div class="product-list">
+							<p class="tit">배변패드</p>
+							<p class="des">100매로 구성되어 있으며, 식단과 함께 배송됩니다.</p>
+							<ul>
+								<li>
+									<p class="img"><img src="http://placehold.it/114x114" alt=""></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro2-1" checked>
+											<label for="pro2-1"></label>
+										</span>
+									</p>
+									<p class="name">소형</p>
+									<p class="price">30,000원</p>
+								</li>
+								<li>
+									<p class="img"></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro2-2">
+											<label for="pro2-2"></label>
+										</span>
+									</p>
+									<p class="name">중형</p>
+									<p class="price">30,000원</p>
+								</li>
+								<li>
+									<p class="img"></p>
+									<p>
+										<span class="chk-box">
+											<input type="checkbox" name="" id="pro2-3">
+											<label for="pro2-3"></label>
+										</span>
+									</p>
+									<p class="name">대형</p>
+									<p class="price">30,000원</p>
+								</li>
+							</ul>
+						</div> -->
+						<!--// 201021 상품 변경 -->
+						<div class="pop-btn">
+							<p class="text red">※상품 변경 시 구독 결제 금액이 변경 됩니다.</p>
+							<button type="button" class="btn btn-blue big">구독 상품 변경하기(+30,000원)</button>
+						</div>
+					</div>
+					<button class="btn btn-close" type="button">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st pop-adrs" id="pop-adrs">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>배송지 목록</h1>
+					</div>
+					<div class="pop-con">
+						<form action="">
+						<ul class="adrs-list list-box">
+							<li class="base"> <!--기본배송지일 경우 class:base-->
+								<div class="cell">
+									<span class="radio-box">
+										<input type="radio" name="adrs" id="adrs01" checked>
+										<label for="adrs01"></label>
+									</span>
+								</div>
+								<div class="cell">
+									<p class="name">강민경</p>
+									<p class="adrs">06241 서울시 강남구 테헤란로 2길 27 8층 807호</p>
+									<p class="phone">010-1234-5678</p>
+									<p><button type="button" class="btn btn-delete">삭제</button></p>
+								</div>
+							</li>
+							<li>
+								<div class="cell">
+									<span class="radio-box">
+										<input type="radio" name="adrs" id="adrs02">
+										<label for="adrs02"></label>
+									</span>
+								</div>
+								<div class="cell">
+									<p class="name">강민경</p>
+									<p class="adrs">06241 서울시 강남구 테헤란로 2길 27 8층 807호</p>
+									<p class="phone">010-1234-5678</p>
+									<p><button type="button" class="btn btn-delete">삭제</button></p>
+								</div>
+							</li>
+							<li>
+								<div class="cell">
+									<span class="radio-box">
+										<input type="radio" name="adrs" id="adrs03">
+										<label for="adrs03"></label>
+									</span>
+								</div>
+								<div class="cell">
+									<p class="name">강민경</p>
+									<p class="adrs">06241 서울시 강남구 테헤란로 2길 27 8층 807호</p>
+									<p class="phone">010-1234-5678</p>
+									<p><button type="button" class="btn btn-delete">삭제</button></p>
+								</div>
+							</li>
+							<li>
+								<div class="cell">
+									<span class="radio-box">
+										<input type="radio" name="adrs" id="adrs04">
+										<label for="adrs04"></label>
+									</span>
+								</div>
+								<div class="cell">
+									<p class="name">강민경</p>
+									<p class="adrs">06241 서울시 강남구 테헤란로 2길 27 8층 807호</p>
+									<p class="phone">010-1234-5678</p>
+									<p><button type="button" class="btn btn-delete">삭제</button></p>
+								</div>
+							</li>
+						</ul>
+						<div class="pop-btn">
+							<button type="button" class="btn btn-gray-line big" onclick="closePop('pop-adrs');openPop('pop-addAdrs')">+ 배송지 추가</button>
+							<button type="button" class="btn btn-blue big" disabled>배송지 변경하기</button>
+						</div>
+						</form>
+					</div>
+					<button class="btn btn-close" type="button">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st pop-addAdrs" id="pop-addAdrs">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>배송지 추가</h1>
+					</div>
+					<div class="pop-con">
+						<form action="">
+							<dl class="add-form">
+								<dt>수령인</dt>
+								<dd>
+									<div class="input-box validator">
+										<label for="receiver">배송을 받을 수령인을 입력해 주세요.</label>
+										<input type="text" value="" id="receiver">
+										<p></p>
+									</div>
+								</dd>
+								<dt>휴대전화번호</dt>
+								<dd>
+									<div class="input-box validator">
+										<label for="phone">‘-’없이 입력해 주세요.</label>
+										<input type="tel" maxlength="11" value="" id="phone">
+										<p></p>
+									</div>
+								</dd>
+								<dt>배송지주소 
+									<span class="chk-box">
+										<input type="checkbox" name="" id="selectBase">
+										<label for="selectBase">기본배송지로 선택</label>
+									</span>
+								</dt>
+								<dd class="hasbtn">
+									<div class="input-box validator">
+										<input type="text" value="" id="" readonly>
+										<p></p>
+									</div>
+									<button type="button" class="btn btn-blue btn-zip">우편번호</button>
+								</dd>
+								<dd>
+									<div class="input-box validator">
+										<input type="text" value="" id="" readonly >
+										<p></p>
+									</div>
+								</dd>
+								<dd>
+									<div class="input-box validator">
+										<label for="detailadrs">상세주소를 입력해주세요.</label>
+										<input type="text" value="" id="detailadrs">
+										<p></p>
+									</div>
+								</dd>
+							</dl>
+							<div class="pop-btn">
+								<!--모두 입력후(after validate) disabled 비활성화-->
+								<button type="button" class="btn btn-blue big" disabled>배송지 추가하기</button>
+							</div>
+						</form>
+					</div>
+					<button class="btn btn-close" onclick="openPop('pop-adrs')" type="button">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st pop-coupon" id="pop-coupon">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>쿠폰 적용</h1>
+					</div>
+					<div class="pop-con">
+						<ul class="coupon-list">
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon01">
+									<label for="coupon01"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon02">
+									<label for="coupon02"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon03">
+									<label for="coupon03"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon04">
+									<label for="coupon04"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon05">
+									<label for="coupon05"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<span class="radio-box">
+									<input type="radio" name="coupon" id="coupon06">
+									<label for="coupon06"></label>
+								</span>
+								<div class="coupon">
+									<p class="percent">-50%</p>
+									<div>
+										<p class="tit">첫 신규가입 감사쿠폰</p>
+										<p class="limit">유효기간 : 2020.05.31까지</p>
+									</div>
+								</div>
+							</li>
+						</ul>		
+						<div class="pop-btn">
+							<dl class="result-box">
+								<dt>총 할인금액</dt>
+								<dd>50,000원</dd>
+							</dl>
+							<button type="button" class="btn btn-blue big" disabled>쿠폰 적용하기</button> 
+						</div>
+					</div>
+					<button class="btn btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st popup-calendar" id="pop-predelivery">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>수령일 변경</h1>
+					</div>
+					<div class="pop-con">
+						<p class="info2"><span>미리 배송받을 수령일을 선택해 주세요.</span></p>
+						<div class="calendar-box">
+							<div class="calendar" id="datepicker2"></div>
+							<ul class="calendar_sign">
+								<li class="today">오늘 날짜</li>
+								<li class="nextday">다음 배송 날짜</li>
+								<li class="selectedday">선택한 날짜</li>
+							</ul>
+						</div>
+						<p class="info">
+							미리 배송받을 경우 기존 결제일도 변경 될 수 있습니다.<br>
+							<span>택배사의 사정에 따라 배송일(도착일)이 변동 될 수 있습니다.</span>
+						</p>
+						<div class="pop-btn">
+							<button type="button" class="btn btn-blue big" disabled>수령일 변경하기</button>
+						</div>
+					</div>
+					<button class="btn btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st popup-calendar" id="pop-chgdate">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>수령일 변경</h1>
+					</div>
+					<div class="pop-con">
+						<p class="info2"><span>변경할 수령일을 선택해 주세요.</span></p>
+						<div class="calendar-box">
+							<div class="calendar" id="datepicker1"></div>
+							<ul class="calendar_sign">
+								<li class="today">오늘 날짜</li>
+								<li class="nextday">수령 날짜</li>
+								<li class="selectedday">선택한 날짜</li>
+							</ul>
+						</div>
+						<div class="reason">
+							<p>수령일 변경 사유를 선택해 주세요.</p>
+							<div class="select-box">
+								<label for="selectbox" class="selected-option">선택해 주세요.</label>
+								<select name="" value="" id="selectbox">
+									<option value="" selected disabled hidden>default</option>
+									<option value="reason1">집을 비우게 되었습니다.</option>
+									<option value="reason2">이유2</option>
+									<option value="reason3">이유3</option>
+									<option value="reason4">이유4</option>
+								</select>
+						   </div>
+						</div>
+						<p class="info">
+							한 달 이상 수령일 연기를 원하시는 경우,<br>
+							<strong>고객센터&lpar;1588 &#45; 0000&rpar;</strong>으로 문의해주세요.<br>
+							<span>택배사의 사정에 따라 배송일(도착일)이 변동 될 수 있습니다.</span>
+						</p>
+						<div class="pop-btn noline">
+							<!-- 기존 설정한 수령일과 다를경우에 disabled 삭제 -->
+						<button type="button" class="btn btn-blue big">수령일 변경하기</button>
+						</div>
+					</div>
+					<button class="btn btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<!-- 201221 추가 -->
+			<div class="popup2 popup-st pop-payway" id="pop-payway">
+				<div class="popup-wrapper">
+					<div class="pop-tit">
+						<h1>결제수단 변경</h1>
+					</div>
+					<div class="pop-con cardInfo">
+						<ul class="board-st1 pay-option">
+							<li>
+								<div>
+									<span class="radio-box">
+										<input type="radio" name="payopt" id="pay-option1">
+										<label for="pay-option1">개인카드</label>
+									</span>
+									<span class="radio-box">
+										<input type="radio" name="payopt" id="pay-option2">
+										<label for="pay-option2">법인카드</label>
+									</span>
+								</div>
+								<div>
+									<dl>
+										<dt>카드 번호</dt>
+										<dd>
+											<div class="input-box validator">
+												<label for="cardNum">카드번호는 ‘-’를 빼고 숫자만 입력해주세요.</label>
+												<input type="text" value="" id="cardNum">
+												<p></p>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div>
+									<dl>
+										<dt>유효기간</dt>
+										<dd>
+											<div class="row">
+												<div class="select-box">
+													<label for="selectbox" class="selected-option">월</label>
+													<select name="" value="">
+														<option value="" selected disabled hidden>default</option>
+														<option value="">1월</option>
+													</select>
+											   </div>
+											   <div class="select-box">
+													<label for="selectbox" class="selected-option">년</label>
+													<select name="" value="">
+														<option value="" selected disabled hidden>default</option>
+														<option value="">2020년</option>
+													</select>
+												</div>
+											</div>
+										</dd>
+									</dl>
+								</div>
+								<div>
+									<dl>
+										<dt>생년월일</dt>
+										<dd>
+											<div class="input-box validator">
+												<label for="identificationNum">생년월일 6자리를 입력해주세요.</label>
+												<input type="text" value="" id="identificationNum">
+												<p></p>
+											</div>
+										</dd>
+									</dl>
+								
+								</div>
+								<div>
+									<dl>
+										<dt>비밀번호</dt>
+										<dd>
+											<div class="input-box validator half">
+												<label for="pwdNum">앞 2자리</label>
+												<input type="text" value="" id="pwdNum">
+												<p></p>
+											</div>
+											**
+										</dd>
+									</dl>
+									
+								</div>
+							</li>
+						</ul>	
+						<div class="pop-btn">
+							<button type="button" class="btn btn-blue big" disabled>변경하기</button> 
+						</div>
+					</div>
+					<button class="btn btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<!--// 201221 추가 -->
+			<div class="popup2 popup-st1 terms" id="pop-terms01">
+				<div class="popup-wrapper">
+					<div class="pop-container">
+						<div class="pop-tit">
+							<h1>이용약관</h1>
+						</div>
+						<div class="pop-con">
+							<p>
+								주식회사 밥먹자(이하 '밥먹자'라고만 합니다)는 밥먹자가 제공하는
+								서비스의 기획부터
+								종료까지 「정보통신망 이용촉진 및 정보보호 등에 
+								관한 법률」(이하 ‘정보통신망법’이라고
+								만 합니다) 등 국내의 개인정보 
+								보호 관련 법령을 철저히 준수합니다. <br><br>
+		
+								밥먹자는 이용자의
+								개인정보 보호 및 권익을 보호하고 개인정보와 
+								관련한 이용자의 고충을 원활하게 처리할
+								수 있도록 다음과 같은 
+								처리방침을 두고 있습니다.<br><br>
+		
+								본 개인정보처리방침의 목차는 아래와 같습니다.<br><br>
+		
+								1.개인정보처리방침의 의의<br>
+								2.수집하는 개인정보의 항목과 수집ㆍ이용 목적 (필수 안내사항)<br>
+								3.개인정보의 수집 방법 (필수 안내사항)<br>
+								4.개인정보의 제공 및 위탁 (필수 안내사항)<br>
+								5.개인정보의 보유 기간 (필수 안내사항)<br>
+								6.개인정보의 파기 (필수 안내사항)<br>
+								7.정보주체와 법정대리인의 권리·의무 및 그 행사 방법 (필수 안내사항)<br>
+								8.개인정보의 안정성 확보조치에 관한 사항<br>
+								9.개인정보 자동 수집 장치의 설치·운영 및 그 거부에 관한 사항 (필수 안내사항)<br>
+								10.개인정보 보호책임자 및 담당자 안내 (필수 안내사항)<br>
+								11.본 개인정보처리방침의 적용 범위<br>
+								12.개인정보처리방침 변경 전 고지 의무<br>
+								1. 개인정보처리방침의 의의<br>
+								밥먹자는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, 밥먹자가 제공하는
+								서비스 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고 상세하게 설명하기 위해
+								노력하였습니다.<br>
+								이는 쉬운 용어를 사용한 개인정보처리방침 작성 원칙인 ‘Plain Language Privacy
+								Policy(쉬운 용어를 사용한 개인정보처리방침)’와 2019. 6. 25일 시행된 정보통신망법
+								제22조 제3항을 반영한 것입니다.<br>
+								개인정보처리방침은 다음과 같은 중요한 의미를 가지고 있습니다.<br>
+								• 밥먹자가 어떤 정보를 수집하고, 수집한 정보를 어떻게 사용하며, 필요에 따라 누구와
+								이를 공유(‘위탁 또는 제공’)하며, 이용목적을 달성한 정보를 언제·어떻게 파기하는지 등
+								의 정보를 투명하게 제공합니다
+							</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<div class="popup2 popup-st1 terms" id="pop-terms02">
+				<div class="popup-wrapper">
+					<div class="pop-container">
+						<div class="pop-tit">
+							<h1>개인정보처리방침</h1>
+						</div>
+						<div class="pop-con">
+							<p>
+								주식회사 밥먹자(이하 '밥먹자'라고만 합니다)는 밥먹자가 제공하는
+								서비스의 기획부터
+								종료까지 「정보통신망 이용촉진 및 정보보호 등에 
+								관한 법률」(이하 ‘정보통신망법’이라고
+								만 합니다) 등 국내의 개인정보 
+								보호 관련 법령을 철저히 준수합니다. <br><br>
+		
+								밥먹자는 이용자의
+								개인정보 보호 및 권익을 보호하고 개인정보와 
+								관련한 이용자의 고충을 원활하게 처리할
+								수 있도록 다음과 같은 
+								처리방침을 두고 있습니다.<br><br>
+		
+								본 개인정보처리방침의 목차는 아래와 같습니다.<br><br>
+		
+								1.개인정보처리방침의 의의<br>
+								2.수집하는 개인정보의 항목과 수집ㆍ이용 목적 (필수 안내사항)<br>
+								3.개인정보의 수집 방법 (필수 안내사항)<br>
+								4.개인정보의 제공 및 위탁 (필수 안내사항)<br>
+								5.개인정보의 보유 기간 (필수 안내사항)<br>
+								6.개인정보의 파기 (필수 안내사항)<br>
+								7.정보주체와 법정대리인의 권리·의무 및 그 행사 방법 (필수 안내사항)<br>
+								8.개인정보의 안정성 확보조치에 관한 사항<br>
+								9.개인정보 자동 수집 장치의 설치·운영 및 그 거부에 관한 사항 (필수 안내사항)<br>
+								10.개인정보 보호책임자 및 담당자 안내 (필수 안내사항)<br>
+								11.본 개인정보처리방침의 적용 범위<br>
+								12.개인정보처리방침 변경 전 고지 의무<br>
+								1. 개인정보처리방침의 의의<br>
+								밥먹자는 본 개인정보처리방침을 정보통신망법을 기준으로 작성하되, 밥먹자가 제공하는
+								서비스 내에서의 이용자 개인정보 처리 현황을 최대한 알기 쉽고 상세하게 설명하기 위해
+								노력하였습니다.<br>
+								이는 쉬운 용어를 사용한 개인정보처리방침 작성 원칙인 ‘Plain Language Privacy
+								Policy(쉬운 용어를 사용한 개인정보처리방침)’와 2019. 6. 25일 시행된 정보통신망법
+								제22조 제3항을 반영한 것입니다.<br>
+								개인정보처리방침은 다음과 같은 중요한 의미를 가지고 있습니다.<br>
+								• 밥먹자가 어떤 정보를 수집하고, 수집한 정보를 어떻게 사용하며, 필요에 따라 누구와
+								이를 공유(‘위탁 또는 제공’)하며, 이용목적을 달성한 정보를 언제·어떻게 파기하는지 등
+								의 정보를 투명하게 제공합니다
+							</p>
+						</div>
+					</div>
+					<button type="button" class="btn-close">팝업 닫기</button>
+				</div>
+			</div><!-- popup -->
+			<!--// popup zone-->			
+		</div>
+		<footer>
+			<h1 class="hidden">사이트 정보</h1>
+			<nav class="gnb">
+				<ul>
+					<li><a href="../intro/intro.html">서비스 소개</a></li>
+					<li><a href="javascript:void(0)" onclick="openPop('pop-terms01')">이용약관</a></li>
+					<li><a href="javascript:void(0)" onclick="openPop('pop-terms02')">개인정보처리방침</a></li>
+				</ul>
+			</nav>
+			<div class="con">
+				<ul class="info">
+					<li>주식회사 밥먹자</li>
+					<li>대표자 : 구본하</li>
+				</ul>
+				<ul class="info">
+					<li>개인정보보호 책임자 : 임아롱</li>      
+					<li>사업자등록번호 : 104-88-01459</li>      
+					<li>통신판매업 : 제 2020-서울강남-0000호</li>
+				</ul>
+				<p><address>서울특별시 강남구 테헤란로 431, 7층 7021호<br>(삼성동, 저스트코타워)</address></p>
+				<p><a href="mailto:flyingpuppy_help@bobmukza.com">flyingpuppy_help@bobmukza.com</a></p>
+				<p class="copyright">&#169; BOBMUKZA 2020 co., Ltd. All right reserved.</p>
+			</div>
+			<ul class="sns">
+				<li><a href="/" target="_blank" title="새 창" class="ico facebook btn-sns">facebook</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico instagram btn-sns">instagram</a></li>
+				<li><a href="/" target="_blank" title="새 창" class="ico youtube btn-sns">youtube</a></li>
+			</ul>
+		</footer>
+	</section> 
+	<script type="text/javascript" charset="utf-8" src="../assets/js/jquery-3.4.1.min.js"></script>	
+	<script type="text/javascript" charset="utf-8" src="../assets/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="../assets/js/perfect-scrollbar.min.js"></script>		
+	<script type="text/javascript" charset="utf-8" src="../assets/js/common.js"></script>
+	<script>
+		// Seting up disabled days
+		var disabledDays=["2020-8-1","2020-8-2","2020-8-3"]; // 불가능날짜
+		var autoSeletedDay=["2020-8-17"];// 자동 가능 날짜 설정
+		var disabledSomeday = function(date){
+			var month = date.getMonth()+1;
+			var dates = date.getDate();
+			var year = date.getFullYear();
+			var dateString =year+'-'+month+'-'+dates;
+			for(var i=0;i<disabledDays.length;i++){
+				if($.inArray(dateString,disabledDays) != -1)
+					return [false, "disabled"];	
+			}
+			if($.inArray(dateString,autoSeletedDay) != -1)
+					return [true, "autoSeleted"];	
+			return [true, ""];
+		}
+		$( "#datepicker1,#datepicker2" ).datepicker({
+			regional: "ko",
+			dateFormat:'yy-mm-dd',
+			monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'], // 개월 텍스트 설정
+			dayNamesMin: ['일','월','화','수','목','금','토'], // 요일 텍스트 축약 설정
+			beforeShowDay:disabledSomeday
+		}).datepicker("setDate",null);
+		$("#datepicker1,#datepicker2" ).find(".ui-datepicker-current-day").removeClass("ui-datepicker-current-day"); // this actually removes the highlight
+		
+	</script>
+</body>
+</html>
